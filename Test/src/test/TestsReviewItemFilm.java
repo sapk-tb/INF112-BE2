@@ -126,8 +126,6 @@ public class TestsReviewItemFilm {
         System.out.println("Tests de review des films au réseau social  ");
         SocialNetwork sn = new SocialNetwork();
 
-        int nbLivres = sn.nbBooks();
-        int nbFilms = sn.nbFilms();
 
         //On ajout un utilisateur qui nous servira pour les reviews
         try {
@@ -145,6 +143,8 @@ public class TestsReviewItemFilm {
             e.printStackTrace();
         }
 
+        int nbLivres = sn.nbBooks();
+        int nbFilms = sn.nbFilms();
         Moyenne moyenne = new Moyenne();
         moyenne.value = 0;
         // <=> fiche numéro 6
